@@ -10,7 +10,7 @@ document.getElementById('nameForm').addEventListener('submit', function(e) {
     img.onload = function() {
         ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear previous drawings
         ctx.drawImage(img, 0, 0);
-        ctx.font = '200px monospace';
+        ctx.font = "200px Playwrite GB S";
         ctx.fillStyle = 'black'; // Text color
         ctx.textAlign = 'center';
         ctx.fillText(userName, canvas.width / 2, canvas.height / 2); // Center the text

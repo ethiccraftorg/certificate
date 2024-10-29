@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
 body {
-    font-family:Verdana, Tahoma, sans-serif;
+    font-family:'Playwrite GB S', cursive;
     background-image: url("./images/bg-certificate.png") ;
     background-repeat: no-repeat;
     background-position: center;
