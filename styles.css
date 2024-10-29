@@ -1,17 +1,58 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family:Verdana, Tahoma, sans-serif;
+    background-image: url("./images/bg-certificate.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; /* Space logos evenly */
+    align-items: center; /* Center logos vertically */
+    padding-top: 20px; /* Add some padding */ /* Optional: Semi-transparent background */
+}
+
+header img {
+    height: 70px;
+}
+
 .container {
-    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.text-block {
+    flex: 1; /* Take up available space */
+    padding: 20px;
+    border-radius: 8px;
+    color: black; /* Text color for the text block */
+}
+.iframe-video {
+    width: 500px;
+    height: 300px;
+    aspect-ratio: 16 / 9;
+}
+.form-block {
+    flex: 1; /* Take up available space */
+    padding: 20px;
+    border-radius: 8px;
 }
 
 input {
     padding: 10px;
     margin: 10px;
-    width: 300px;
 }
 
 button {
@@ -24,4 +65,74 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+#download-btn{
+    margin: auto;
+}
+@media (max-width:1086px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width:830px) {
+    .iframe-video {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media (max-width:763px) {
+    header img {
+        height: 60px;
+    }
+    .container {
+         width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    header img {
+        height: 50px;
+    }
+    .iframe-video {
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media (max-width:500px) {
+    header img {
+        height: 40px;
+    }
+}
+
+@media (max-width:430px) {
+    header img {
+        height: 35px;
+    }
+    .text-block {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .iframe-video {
+        width: 100%;
+    }
+}
+
+@media (max-width:350px) {
+    header img {
+        height: 30px;
+    }
+}
+
+@media (max-width:250px) {
+    header img {
+        height: 25px;
+    }
+    .form-block {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }

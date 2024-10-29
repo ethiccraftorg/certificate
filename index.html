@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate Generator</title>
+    <title>Udgaar Certificate</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="ethiccraft-logo.ico" type="image/x-icon">
 </head>
+
 <body>
+    <header>
+        <img src="./images/du.png" alt="Ethiccraft Logo">
+        <img src="./images/iskcon.png" alt="Ethiccraft Logo">
+        <img src="./images/ministry.png" alt="Ethiccraft Logo">
+        <img src="./images/ethiccraft.png" alt="Ethiccraft Logo">
+
+    </header>
     <div class="container">
-        <h1>Certificate Generator</h1>
-        <form id="nameForm">
-            <input type="text" id="userName" placeholder="Enter your name" required />
-            <button type="submit">Generate Certificate</button>
-        </form>
-        <canvas id="certificateCanvas" width="800" height="600" style="display:none;"></canvas>
-        <button id="downloadBtn" style="display:none;">Download Certificate</button>
+        <div class="text-block">
+            <h2>Thank You for attending - UDGAAR </h2>
+            <p>A mission to make India addiction-free.</p>
+            <iframe class="iframe-video" src="https://www.youtube.com/embed/rGTzi_Ka1YM"
+                title="UDGAAR 2024 Highlights | Making India Addiction Free | Chief Guest Rajat Sharma India TV"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="form-block">
+
+            <h2>Get your certificate</h2>
+            <form id="nameForm">
+                <input type="text" id="userName" placeholder="Enter your name" required />
+                <button type="submit">Get Certificate</button>
+            </form>
+            <canvas id="certificateCanvas" width="5000" height="3530" style="display:none;"></canvas>
+        </div>
     </div>
+    <button id="downloadBtn" style="display:none;">Download Certificate</button>
 
     <script src="script.js"></script>
 </body>
+
 </html>
