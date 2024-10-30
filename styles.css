@@ -74,6 +74,14 @@ button:hover {
 #download-btn{
     margin: auto;
 }
+.bottom-text {
+    font-family: 'Great Vibes',cursive;
+    font-size: 1.4em;
+    position:absolute;
+    bottom: 0;
+    margin : auto;
+    text-align: center;
+}
 @media (max-width:1086px) {
     .container {
         width: 95%;
@@ -93,6 +101,9 @@ button:hover {
     }
     .container {
          width: 100%;
+    }
+    .bottom-text{
+        position: relative;
     }
 }
 
