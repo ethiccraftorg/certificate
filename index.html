@@ -31,18 +31,23 @@
         <div class="form-block">
 
             <h2>Get your certificate</h2>
+            <select id="mySelect">
+                <option value="1">Participation</option>
+                <option value="2">Volunteer</option>
+            </select>
             <form id="nameForm">
-                <input type="text" id="userName" placeholder="Enter your name" required />
+                <input type="text" id="userName" placeholder="Enter your name"  />
+                <input type="email" id="userEmail" placeholder="Enter your email" />
                 <button type="submit">Get Certificate</button>
             </form>
-            <canvas id="certificateCanvas" width="5000" height="3530" style="display:none;"></canvas>
+            <canvas id="certificateCanvas" width="2000" height="1330" style="display:none;"></canvas>
         </div>
     </div>
     <button id="downloadBtn" style="display:none;">Download Certificate</button>
 
     <p class="bottom-text">Udgaar@Ethiccraft</p>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
