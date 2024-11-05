@@ -88,7 +88,7 @@ const volunteersData = [
 { email : 'pandeygautam237@gmail.com', name: 'Gautam Pandey '},
 { email : 'tanya8076378921@gmail.com', name: 'Tanya '},
 { email : 'Onkaratwalji@gmail.com ', name: 'Onkar Singh Atwal '},
-{ email : 'explorerhelen@gmail.com', name: 'PRADUMAN. SINGH'},
+{ email : 'explorerhelen@gmail.com', name: 'PRADUMAN SINGH'},
 { email : 'heena.chawla071@gmail.com', name: 'Heena'},
 { email : 'devrijul04@gmail.com', name: 'Rijul'},
 { email : 'abhishekkumar90907@gmail.com', name: 'Abhishek kumar '},

@@ -26,6 +26,7 @@ document.getElementById('nameForm').addEventListener('submit', function(e) {
         }
         imageSrc = './images/volunteer.jpg'
     }
+    userName = capitalizeWords(userName);
     const canvas = document.getElementById('certificateCanvas');
     const ctx = canvas.getContext('2d');
     
@@ -78,4 +79,10 @@ function searchName(email) {
         }
     });
     return result;
+}
+
+function capitalizeWords(str) {
+    return str.split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
 }
