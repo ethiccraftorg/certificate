@@ -46,6 +46,25 @@ header img {
     height: 300px;
     aspect-ratio: 16 / 9;
 }
+/* Style the select element */
+#mySelect {
+    width: 120px;                /* Set width */
+    height: 36px;               /* Set height */
+    font-family: Arial, sans-serif; /* Font style */
+    font-size: 16px;            /* Font size */
+    color: #333;                /* Text color */
+    background-color: #f0f0f0;  /* Background color */
+    border: 1px solid #ccc;     /* Border */
+    border-radius: 6px;         /* Rounded corners */
+    padding: 4px;               /* Padding */
+    cursor: pointer;            /* Pointer cursor on hover */
+}
+
+/* Style for options */
+#mySelect option {
+    padding: 6px;              /* Padding inside options (not always supported) */
+}
+
 .form-block {
     flex: 1; /* Take up available space */
     padding: 20px;
@@ -56,6 +75,9 @@ input {
     padding: 10px;
     margin: 10px;
     border-radius: 6px;
+}
+#userEmail {
+    display: none;
 }
 
 button {
@@ -77,9 +99,9 @@ button:hover {
 .bottom-text {
     font-family: 'Great Vibes',cursive;
     font-size: 1.4em;
-    position:absolute;
     bottom: 0;
     margin : auto;
+    margin-top: 10px;
     text-align: center;
 }
 @media (max-width:1086px) {
@@ -101,9 +123,6 @@ button:hover {
     }
     .container {
          width: 100%;
-    }
-    .bottom-text{
-        position: relative;
     }
 }
 
