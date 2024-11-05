@@ -51,7 +51,7 @@ document.getElementById('downloadBtn').addEventListener('click', function() {
     const canvas = document.getElementById('certificateCanvas');
     const link = document.createElement('a');
     link.download = 'udgaar-certificate.jpeg';
-    link.href = canvas.toDataURL('image/jpeg',0.5);
+    link.href = canvas.toDataURL('image/jpeg',0.9);
     link.click();
     document.getElementById('downloadBtn').style.display = 'none';
 });
